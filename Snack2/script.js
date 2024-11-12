@@ -22,8 +22,7 @@ const randomNum = (min, max) => Math.floor(Math.random()* (max - min +1)+ min);
  const nuovoArray=[];
  for(let i= 0; i < squadre.length; i++){
     curSquadra = squadre[i];
-    nuovoArray.push(curSquadra.nome);
-    nuovoArray.push(curSquadra.falli);
+    nuovoArray.push({nome: squadre[i].nome, fali:squadre[i].falli});
    
  }
  console.log(nuovoArray);
