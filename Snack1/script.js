@@ -7,3 +7,13 @@ const bikes = [
 ]
 
 
+let lightBike = bikes[0];
+for(let i = 0; i < bikes.length; i++){
+    curBike = bikes[i];
+    if(curBike.peso < lightBike.peso ){
+        lightBike = curBike
+    }
+
+    console.log("la bici più leggera è " + lightBike.nome);
+    
+}
